@@ -5,6 +5,20 @@
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 
+  
+try:
+  f = open("test.txt", "r")
+  print(f.read())
+except:
+  print("Error: Could not open file")
+  input = input("Would you like to create a new file? (y/n): ")
+  f = open("test.txt", "w+")
+  if input == "y":
+    f.write("This is a test file")
+  else:
+    print("Okay, bye!")
+
+  
 </body>
 </html>
 
